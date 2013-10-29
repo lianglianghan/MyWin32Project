@@ -1,0 +1,266 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(中华人民共和国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU1 MENU 
+BEGIN
+    POPUP "财富入口(&M)"
+    BEGIN
+        MENUITEM "开始游戏(&S)\t(Ctrl+S)",          ID_MENUITEM40001
+        MENUITEM "暂停游戏(&P)\t(Ctrl+P)",          ID_MENUITEM40002
+        MENUITEM "重新开始(&R)\t(Ctrl+R)",          ID_MENUITEM40003
+        MENUITEM "退出游戏(&Q)\t(Ctrl+Q)",          ID_MENUITEM40004
+    END
+    POPUP "小金库(&G)"
+    BEGIN
+        MENUITEM "保存游戏(&B)\t(Ctrl+B)",          ID_MENUITEM40005
+        MENUITEM "加载游戏(&L)\t(Ctrl+L)",          ID_MENUITEM40006
+        MENUITEM "最高纪录(&M)\t(Ctrl+M)",          ID_40010
+    END
+    POPUP "帮助(&H)"
+    BEGIN
+        MENUITEM "游戏简介(&I)\t(Ctrl+I)",          ID_MENUITEM40007
+        MENUITEM "关于(&A)\t(Ctrl+A)",            ID_MENUITEM40008
+    END
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DIALOG1 DIALOGEX 160, 100, 191, 97
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "关于大富翁 V1.0"
+FONT 10, "Consolas", 400, 0, 0x0
+BEGIN
+    CTEXT           "四组出品--------必属精品",IDC_STATIC,55,40,101,15
+    PUSHBUTTON      "确定",IDC_BUTTON1,56,63,65,17
+    CONTROL         182,IDC_STATIC,"Static",SS_BITMAP,17,17,33,39
+END
+
+IDD_DIALOG2 DIALOGEX 70, 60, 214, 102
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "游戏简介"
+FONT 15, "楷体", 400, 0, 0x86
+BEGIN
+    LTEXT           "    钱多多，整天梦想着能够天落金币，终于有一天他的梦想实现了！但是掉落下来的不仅只有金币，还有炸弹和其他杂物。钱多多能够通过他敏捷的身手避开这些阻碍物，获得最多的金币成为真正的大富翁吗？还等什么，快来一试身手吧！",IDC_STATIC,15,24,187,44
+    PUSHBUTTON      "确定",IDC_BUTTON1,74,79,65,14
+    GROUPBOX        "大富翁",IDC_STATIC,7,7,200,68
+END
+
+IDD_DIALOG3 DIALOGEX 100, 60, 156, 79
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "小贴士"
+FONT 14, "楷体", 400, 0, 0x86
+BEGIN
+    DEFPUSHBUTTON   "确定",IDC_BUTTON1,55,56,36,10
+    LTEXT           "啊！！钱多多正在捡钱哦~请不要打扰他~",IDC_STATIC,8,25,146,20
+END
+
+IDD_DIALOG4 DIALOGEX 145, 90, 173, 105
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "最高纪录"
+FONT 12, "楷体", 400, 0, 0x86
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,30,72,50,14
+    PUSHBUTTON      "取消",IDCANCEL,104,71,50,14
+    CTEXT           "您当前的最高纪录为：",IDC_STATIC1,18,35,94,18
+    CTEXT           "静态",IDC_STATIC2,110,34,48,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_DIALOG1, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 184
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 90
+    END
+
+    IDD_DIALOG2, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 207
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 95
+    END
+
+    IDD_DIALOG3, DIALOG
+    BEGIN
+        RIGHTMARGIN, 116
+        BOTTOMMARGIN, 58
+    END
+
+    IDD_DIALOG4, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 166
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 98
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICON1               ICON                    "resource\\Millionaire.ico"
+IDI_ICON2               ICON                    "resource\\icon2.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_CURSOR1             CURSOR                  "resource\\Handwriting.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+BACKGROUND              BITMAP                  "resource\\background.bmp"
+IDB_BITMAP3             BITMAP                  "resource\\time\\0.bmp"
+IDB_BITMAP4             BITMAP                  "resource\\time\\0_mask.bmp"
+IDB_BITMAP5             BITMAP                  "resource\\time\\1.bmp"
+IDB_BITMAP6             BITMAP                  "resource\\time\\1_mask.bmp"
+IDB_BITMAP7             BITMAP                  "resource\\time\\2.bmp"
+IDB_BITMAP8             BITMAP                  "resource\\time\\2_mask.bmp"
+IDB_BITMAP9             BITMAP                  "resource\\time\\3.bmp"
+IDB_BITMAP10            BITMAP                  "resource\\time\\3_mask.bmp"
+IDB_BITMAP11            BITMAP                  "resource\\time\\4.bmp"
+IDB_BITMAP12            BITMAP                  "resource\\time\\4_mask.bmp"
+IDB_BITMAP13            BITMAP                  "resource\\time\\5.bmp"
+IDB_BITMAP14            BITMAP                  "resource\\time\\5_mask.bmp"
+IDB_BITMAP15            BITMAP                  "resource\\time\\6.bmp"
+IDB_BITMAP16            BITMAP                  "resource\\time\\6_mask.bmp"
+IDB_BITMAP17            BITMAP                  "resource\\time\\7.bmp"
+IDB_BITMAP18            BITMAP                  "resource\\time\\7_mask.bmp"
+IDB_BITMAP19            BITMAP                  "resource\\time\\8.bmp"
+IDB_BITMAP20            BITMAP                  "resource\\time\\8_mask.bmp"
+IDB_BITMAP21            BITMAP                  "resource\\time\\9.bmp"
+IDB_BITMAP22            BITMAP                  "resource\\time\\9_mask.bmp"
+CLOUDS_MASK             BITMAP                  "resource\\clouds_mask.bmp"
+CLOUDS                  BITMAP                  "resource\\clouds.bmp"
+IDB_BITMAP23            BITMAP                  "resource\\dollars.bmp"
+IDB_BITMAP24            BITMAP                  "resource\\dollars_mask.bmp"
+IDB_BITMAP25            BITMAP                  "resource\\marry_mask.bmp"
+IDB_BITMAP26            BITMAP                  "resource\\marry.bmp"
+IDB_BITMAP27            BITMAP                  "resource\\bombs.bmp"
+IDB_BITMAP28            BITMAP                  "resource\\bombs_mask.bmp"
+IDB_BITMAP31            BITMAP                  "resource\\clock_mask.bmp"
+IDB_BITMAP32            BITMAP                  "resource\\clock.bmp"
+IDB_BITMAP29            BITMAP                  "resource\\record\\9.bmp"
+IDB_BITMAP30            BITMAP                  "resource\\record\\0.bmp"
+IDB_BITMAP33            BITMAP                  "resource\\record\\1.bmp"
+IDB_BITMAP34            BITMAP                  "resource\\record\\2.bmp"
+IDB_BITMAP35            BITMAP                  "resource\\record\\3.bmp"
+IDB_BITMAP36            BITMAP                  "resource\\record\\4.bmp"
+IDB_BITMAP37            BITMAP                  "resource\\record\\5.bmp"
+IDB_BITMAP38            BITMAP                  "resource\\record\\6.bmp"
+IDB_BITMAP39            BITMAP                  "resource\\record\\7.bmp"
+IDB_BITMAP40            BITMAP                  "resource\\record\\8.bmp"
+GAMEOVER                BITMAP                  "resource\\gameover.bmp"
+GAMEOVERMASK            BITMAP                  "resource\\gameover_mask.bmp"
+IDB_BITMAP43            BITMAP                  "resource\\pingzi_mask.bmp"
+IDB_BITMAP44            BITMAP                  "resource\\pingzi.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_ACCELERATOR1 ACCELERATORS 
+BEGIN
+    "S",            ID_40001,               VIRTKEY, CONTROL, NOINVERT
+    "P",            ID_40002,               VIRTKEY, CONTROL, NOINVERT
+    "R",            ID_40003,               VIRTKEY, CONTROL, NOINVERT
+    "Q",            ID_40004,               VIRTKEY, CONTROL, NOINVERT
+    "B",            ID_40005,               VIRTKEY, CONTROL, NOINVERT
+    "L",            ID_40006,               VIRTKEY, CONTROL, NOINVERT
+    "I",            ID_40007,               VIRTKEY, CONTROL, NOINVERT
+    "A",            ID_40008,               VIRTKEY, CONTROL, NOINVERT
+    "M",            ID_40010,    VIRTKEY, CONTROL, NOINVERT
+END
+
+#endif    // 中文(中华人民共和国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
